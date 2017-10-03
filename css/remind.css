@@ -1,0 +1,257 @@
+/*全局样式*/
+body{
+    font-family: "圆体";
+    padding-top:41px;
+    padding-bottom:41px;
+    /*background: #FAFAFA;背景配色值得斟酌*/
+}
+/*修改Bootstrap样式*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: rgba(0,0,0,0);
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #C7C7C7;
+}
+.input-group-addon{
+    border-radius: 0;
+}
+.user-body .input-group-addon:first-child{
+    border-left-width: 0;
+}
+.user-body .input-group-addon:last-child{
+    border-right-width: 0;
+}
+/*头部 + 底部*/
+.header>div>div,.footer>div>div{
+    min-height:18px;
+    padding: 0;
+}
+.header>div>div>ul,.footer>div>div>ul{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header>div>div>ul>li>a>i{
+    color:#555;
+}
+.header>div>div>ul>li>a>strong{
+    font-size: 16px;
+    line-height: 16px;
+    color:#555;
+}
+.footer>div>div>ul>li>a{
+    font-weight: bold;
+}
+.footer>div>div>ul>li>a>span{
+    display: block;
+}
+.banner>div>div{
+    padding:0;
+}
+.weather>div>div>div{
+    padding: 15px;
+}
+.weather>div>div{
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border:solid transparent;
+    border-width:1px 0;
+    border-color:#ddd ;
+}
+.remind-lord{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.remind-lord>div>div>div{
+    padding: 15px;
+}
+.remind-lord>div>div{
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border:solid transparent;
+    border-width: 1px 0;
+    border-color:#ddd ;
+}
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.main-body{
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    backface-visibility:hidden;
+    transition:left 0.5s ease-in-out;
+}
+.remind-body,.robot-body,.cook-body,.user-body{
+    margin:0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.choose-time-form>div>label{
+    font-size: 27px;
+    line-height: 47px;
+}
+/*机器人页*/
+/*机器人消息框*/
+.robot-body{
+    position:relative;
+}
+.robot-body-body{
+    /*background: #FAFAFA;*/
+    overflow: auto;
+}
+.robot-body-body>div>div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.robot-body-body>div>div>div{
+    position: relative;
+}
+.message-content{
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 12px;
+    color: #888;
+    font-size:14px ;
+    line-height: 1.5;
+    background: #eee;
+    word-break: break-word;
+    font-weight: 400;
+}
+/*.message-content:before{
+    
+}*/
+/*左边消息*/
+.message-left{
+    padding: 7px 0 15px 60px;
+}
+.message-left>.message-content{
+    border-radius: 0 4px 4px 4px;
+}
+.message-left>.message-content:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px;
+    border-top: 10px solid #eee;
+    border-left:7px solid transparent;
+}
+.message-left>a>img{
+    left: 0;
+}
+/*右边消息*/
+.message-right{
+    padding: 7px 60px 15px 0;
+}
+.message-right>.message-content{
+    border-radius: 4px 0 4px 4px;
+    float: right;
+}
+.message-right>.message-content:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -7px;
+    border-top: 10px solid #eee;
+    border-right:7px solid transparent;
+}
+.message-right>a>img{
+    right: 0;
+}
+.message-right>div{
+    text-align: right;
+}
+.robot-body-body>div>div>div>a>img{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 5px rgba(0,0,0,.1);
+    border-radius:50% ;
+    position: absolute;
+    top: 0;
+}
+/*机器人发送框*/
+.robot-body-footer{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+.robot-body-footer>div>div{
+    padding: 0;
+}
+.robot-body-footer>div>div>div{
+    margin-bottom: 0;
+}
+.robot-body-footer .input-group-addon{
+    padding: 0;
+    width: 32px;
+}
+/*这里宽度不稳定,应等于高度*/
+.robot-body-footer .input-group-addon img{
+    /*border-radius: 50%;*/
+}
+/*用户页*/
+.user-body>div>div>div{
+    padding: 0;
+}
+/*标签 最大化 不要留空隙 或想办法增加左右横线*/
+.user-body>div>div>div>ul{
+   width: 100%;
+   border-bottom: 0;
+   /*padding-left: 5px;
+   padding-right: 5px;*/
+}
+/*.user-body>div>div>div>ul>li:first-child{
+    padding-left: 5px;
+}*/
+.user-body>div>div>div>ul>li{
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+.user-body>div>div>div>ul>li>a{
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    margin-right: 0;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.user-body>div>div>div>ul>li:first-child>a{
+    border-left-width: 0;
+}
+.user-body>div>div>div>ul>li:last-child>a{
+    border-right-width: 0;
+}
+.user-body>div>div>div>ul>.active>a,
+.user-body>div>div>div>ul>.active>a:hover,
+.user-body>div>div>div>ul>.active>a:focus{
+    border-bottom-color: #fff;
+}
+#login{
+    padding:7px 5px 0;
+}
+#login>form>div{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+#login>form>div>div{
+    padding: 0;
+}
+/*#login>form>div>div>button{
+    width: 100%;
+}*/
+#login>form>div>div>.fa{
+    font-size: 31px;
+    line-height: 31px;
+    z-index: 3;
+}

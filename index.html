@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>提醒君 - 后除</title>
+		<meta name="description" content="后除的后厨" />
+        <meta name="keywords" content="后除|后除的后厨|不知不问|钱程|程程|Mazey|MazeyQian|博客|代码|编程|读书|旅行|中医|画画" />
+		<!--Mazey's Favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.mazey.net/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!--让IE使用最新的渲染模式，支持CSS3-->
+        <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+        <!--Mazey's Mobile Layer-->
+        <script language="javascript" type="text/javascript" src="http://www.mazey.net/js/plugin/layer/mobile/layer.js"></script>
+		<!--BootstrapCSS文件，放在<head>内-->
+        <link type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/remind.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!--Mazey's CSS-->
+        <link type="text/css" href="http://www.mazey.net/css/mazey-base.css" rel="stylesheet" />
+        <!--jQuery文件，引入BootstrapJS插件前必需引入-->
+        <script language="javascript" type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+        <!--BootstrapJS文件，一般放在底部-->
+        <script language="javascript" type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--如果IE版本低于IE9，使浏览器支持HTML5和CSS3-->
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]--> 
+	</head>
+	<body>
+		<header class="container-fluid header">
+		    <div class="row">
+		        <div class="navbar navbar-default navbar-fixed-top col-md-12 col-xs-12" role="navigation">
+		            <ul class="nav navbar-nav row">
+		                <li class="col-md-3 col-xs-3 text-left"><a rel="circle" id="circle"><i class="fa fa-spinner fa-spin fa-fw fa-lg"></i></a></li>
+		                <li class="col-md-6 col-xs-6 text-center"><a rel="title"><strong>提醒君 - 后除</strong></a></li><!--ヽ(✿ﾟ▽ﾟ)ノ-->
+		                <li class="col-md-3 col-xs-3 text-right"><a href="http://weibo.com/mazeyqian" target="_self"><i class="fa fa-weibo _fa-spin fa-fw fa-lg" aria-hidden="true"></i></a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</header>
+		<div class="main">
+    		<div class="main-body" style="left:0%;">
+        		<section class="remind-body">
+            		<div class="container-fluid banner">
+            		    <div class="row">
+                            <div id="myCarousel" class="carousel slide col-md-12 col-xs-12" data-ride="carousel" data-interval="3500" data-pause="hover" data-wrap="true">
+                                <!--设置图片轮播的顺序-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                </ol>
+                                <!--设置轮播图片-->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="img/b1.jpg" alt="">
+                                        <div class="carousel-caption">
+                                            <h5>夜里总是下雨[睡觉]</h5>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/b2.jpg" alt="">
+                                        <div class="carousel-caption">
+                                            <h5>后除提醒君の世界</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid weather">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>南京：多云 - 温度：37°/15°</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid remind-lord">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>
+                                    <p>日期：2017年7月6日</p>
+                                    <p>记录：开发了一个日期提醒APP</p>
+                                    <p><button type="button" id="t1">t1</button></p>
+                                    <p><button type="button" id="t2">t2 - 全页</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid remind-lord">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>
+                                    <p>日期：2017年7月7日</p>
+                                    <p>记录：开发了一个日期提醒APP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid remind-lord">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>
+                                    <p>日期：2017年7月6日</p>
+                                    <p>记录：开发了一个日期提醒APP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid remind-lord">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>
+                                    <p>日期：2017年7月6日</p>
+                                    <p>记录：开发了一个日期提醒APP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid remind-lord">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>
+                                    <p><a href="123.html">日期：2017年7月6日</a></p>
+                                    <p>记录：开发了一个日期提醒APP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="robot-body">
+                    <div class="container-fluid robot-body-body">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="message-left">
+                                    <a rel="mazey">
+                                        <img src="img/header/header-boy-1.jpg" />
+                                    </a>
+                                    <div class="nickname">后除</div>
+                                    <div class="message-content">
+                                        Hi～我是后除
+                                    </div>
+                                </div>
+                                <div class="message-left">
+                                    <a rel="mazey">
+                                        <img src="img/header/header-boy-1.jpg" />
+                                    </a>
+                                    <div class="nickname">后除</div>
+                                    <div class="message-content">
+                                        我给你讲个笑话吧，程程有一天胖了一万斤，然后...<br/>
+                                        嘣！爆炸了！变成了猪！
+                                    </div>
+                                </div>
+                                <div class="message-left">
+                                    <a rel="mazey">
+                                        <img src="img/header/header-girl-3.jpg" />
+                                    </a>
+                                    <div class="nickname">机器君</div>
+                                    <div class="message-content">
+                                        哈哈哈哈哈...真无聊
+                                    </div>
+                                </div>
+                                <div class="message-right">
+                                    <a rel="mazey">
+                                        <img src="img/header/header-girl-2.jpg" />
+                                    </a>
+                                    <div class="nickname">手机君</div>
+                                    <div class="message-content">
+                                        哈哈哈哈
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid robot-body-footer">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <img src="img/header/header-girl-2.jpg" class="img-responsive _center-block _img-circle"/>
+                                        </div>
+                                        <input type="text" class="form-control" />
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default">发送</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cook-body">
+                    <div class="container-fluid weather">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>南京：多云 - 温度：37°/15°</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid weather">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div>南京：多云 - 温度：37°/15°</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="user-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <ul class="nav nav-tabs _nav-justified">
+                                    <li role="presentation" class="active"><a href="#login" role="tab">登录</a></li>
+                                    <li role="presentation"><a href="#signin" role="tab">注册</a></li>
+                                    <li role="presentation"><a href="#about" role="tab">关于我</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active fade in" id="login">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="input-group col-md-12 col-sm-12 col-xs-12 has-feedback">
+                                                    <div class="input-group-addon"><i class="fa fa-user-circle-o fa-fw fa-lg" aria-hidden="true"></i></div>
+                                                    <input type="text" class="form-control" name="username" placeholder="帐号/2-20位/字母/数字/下划线" />
+                                                    <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group col-md-12 col-sm-12 col-xs-12 has-feedback">
+                                                    <div class="input-group-addon"><i class="fa fa-unlock-alt fa-fw fa-lg" aria-hidden="true"></i></div>
+                                                    <input type="password" class="form-control" name="password" placeholder="密码/6-20位/字母/数字/下划线" />
+                                                    <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+                                            <!--<div class="form-group">
+                                                <div class="input-group col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="input-group-addon"><i class="fa fa-unlock-alt fa-fw fa-lg" aria-hidden="true"></i></div>
+                                                    <input type="text" class="form-control" placeholder="密码" />
+                                                    <div class="input-group-addon"><i class="fa fa-question fa-fw fa-lg" aria-hidden="true"></i></div>
+                                                </div>
+                                            </div>-->
+                                            <div class="form-group">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                    <button type="button" class="btn btn-primary btn-block">登录</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="signin">signin</div>
+                                    <div class="tab-pane fade" id="about">about</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    		</div>
+        </div>
+		<footer class="container-fluid footer">
+            <div class="row">
+                <div class="navbar navbar-default navbar-fixed-bottom col-md-12 col-xs-12" role="navigation">
+                    <ul class="nav navbar-nav row">
+                        <li id="remind-icon" class="col-md-3 col-xs-3 text-center active">
+                            <a><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i></a>
+                        </li>
+                        <li id="robot-icon" class="col-md-3 col-xs-3 text-center">
+                            <a><i class="fa fa-comments fa-fw fa-lg" aria-hidden="true"></i></a>
+                        </li>
+                        <li id="cook-icon" class="col-md-3 col-xs-3 text-center">
+                            <a><i class="fa fa-coffee fa-fw fa-lg" aria-hidden="true"></i></a>
+                        </li>
+                        <li id="user-icon" class="col-md-3 col-xs-3 text-center">
+                            <a><i class="fa fa-user fa-fw fa-lg" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!--提醒君选择时间内容-->
+        <div class="display-none" id="choose-time-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <form class="form-horizontal choose-time-form">
+                            <div class="form-group">
+                                <label class="col-md-1 text-right" for="">频率：</label>
+                                <div class="col-md-9 text-left">
+                                    <input type="text" class="form-control" id="" placeholder="每周/每月/每年">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-1 text-right" for="">选择：</label>
+                                <div class="col-md-9 text-left">
+                                    <input type="date" class="form-control" id="" placeholder="选择时间" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="checkbox">
+                            <label>
+                            <input type="checkbox"> Check me out
+                            </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:20px;">
+                <p style="margin-bottom: 20px;">仿佛是一个全新的页面</p>
+                <button type="button" onclick="layer.closeAll(); layer.open({content:'世界恢复原样 →_→', time:2});">我要关闭！！</button>
+            </div>
+
+        </div>
+	</body>
+</html>
+
+<script src="js/remind.js"></script>
